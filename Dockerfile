@@ -9,8 +9,3 @@ RUN dnf install -y \
         @"C Development Tools and Libraries" \
         redhat-rpm-config \
         fzf vim tmux the_silver_searcher
-
-RUN cd /opt && git clone https://github.com/owtaylor/toolbox-vscode.git && cd toolbox-vscode && \
-    [ -d ~/.local/bin ] || mkdir -p ~/.local/bin && \
-    ln -s "$PWD/code.sh" ~/.local/bin/code
-
