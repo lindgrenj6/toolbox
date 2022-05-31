@@ -1,20 +1,16 @@
-FROM registry.fedoraproject.org/f32/fedora-toolbox:32
+FROM registry.fedoraproject.org/fedora-toolbox:36
 MAINTAINER jlindgre@redhat.com
 
-USER 0
-RUN dnf update --refresh -yq
 RUN dnf install -y \
-        ruby-devel \
+        golang ruby-devel elixir erlang \
         ansible \
         mosh \
         postgresql mariadb redis \
-        ImageMagick-devel \
-        skopeo buildah podman \
         @"C Development Tools and Libraries" \
         redhat-rpm-config \
-        golang-bin \
-        fzf vim 
+        fzf vim tmux the_silver_searcher
 
-RUN pip3 install receptor receptor_catalog
+RUN cd /opt && git clone https://github.com/owtaylor/toolbox-vscode.git && cd toolbox-vscode && \
+    [ -d ~/.local/bin ] || mkdir -p ~/.local/bin && \
+    ln -s "$PWD/code.sh" ~/.local/bin/code
 
-RUN gem install bundler rubocop:0.72.0 rubocop-performance:1.6.1 rubocop-rspec:1.38.1 
