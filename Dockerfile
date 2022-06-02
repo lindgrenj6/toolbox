@@ -12,5 +12,5 @@ RUN dnf install -y sqlite-devel @"C Development Tools and Libraries" redhat-rpm-
 # daily tools 
 RUN dnf install -y fzf vim tmux the_silver_searcher gh
 
-
-RUN dnf clean all
+# update the rest of the packages and clean up (easy to rebuild and pull in updates this way)
+RUN dnf update -y && dnf clean all
