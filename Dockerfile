@@ -10,7 +10,7 @@ RUN dnf install -y postgresql mariadb redis
 # libraries        
 RUN dnf install -y sqlite-devel @"C Development Tools and Libraries" redhat-rpm-config
 # daily tools 
-RUN dnf install -y fzf vim tmux the_silver_searcher gh
+RUN dnf install -y fzf vim tmux the_silver_searcher gh jq
 
 # update the rest of the packages and clean up (easy to rebuild and pull in updates this way)
 RUN dnf update -y && dnf clean all
