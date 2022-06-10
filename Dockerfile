@@ -2,7 +2,7 @@ FROM registry.fedoraproject.org/fedora-toolbox:36
 LABEL MAINTAINER="jlindgre@redhat.com"
 
 # proglangs
-RUN dnf install -y golang ruby-devel elixir erlang
+RUN dnf install -y golang ruby-devel elixir erlang python3-pip
 # dev tools
 RUN dnf install -y ansible mosh podman buildah skopeo ImageMagick
 # db crap
