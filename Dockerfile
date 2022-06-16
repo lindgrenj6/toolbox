@@ -4,7 +4,7 @@ LABEL MAINTAINER="jlindgre@redhat.com"
 # proglangs
 RUN dnf install -y golang ruby-devel elixir erlang python3-pip
 # dev tools
-RUN dnf install -y ansible mosh podman buildah skopeo ImageMagick
+RUN dnf install -y ansible mosh podman buildah skopeo ImageMagick bind-utils
 # db crap
 RUN dnf install -y postgresql mariadb redis
 # libraries
