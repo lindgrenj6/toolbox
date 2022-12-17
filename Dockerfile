@@ -11,5 +11,7 @@ RUN dnf update -y && \
     @"Virtualization" virt-manager \
     podman-docker borgbackup pinentry \
     fzf vim tmux the_silver_searcher gh jq htop httpie bat \
+    lm_sensors xdg-utils w3m ncdu \
+    arm-none-eabi-gcc avr-gcc avrdude dfu-programmer dfu-util arm-none-eabi-newlib \
     && \
     dnf clean all
