@@ -9,7 +9,7 @@ RUN dnf update -y && \
     postgresql mariadb redis \
     sqlite-devel @"C Development Tools and Libraries" redhat-rpm-config \
     @"Virtualization" virt-manager \
-    podman-docker borgbackup pinentry \
+    podman-docker borgbackup pinentry restic \
     fzf vim tmux the_silver_searcher gh jq htop httpie bat \
     lm_sensors xdg-utils w3m ncdu \
     arm-none-eabi-gcc avr-gcc avrdude dfu-programmer dfu-util arm-none-eabi-newlib \
