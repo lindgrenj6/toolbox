@@ -10,7 +10,7 @@ RUN dnf update -y && \
     sqlite-devel @"C Development Tools and Libraries" redhat-rpm-config \
     @"Virtualization" virt-manager \
     podman-docker borgbackup pinentry restic \
-    fzf vim tmux the_silver_searcher gh jq htop httpie bat \
+    fzf vim tmux the_silver_searcher gh jq htop httpie bat moreutils \
     lm_sensors xdg-utils w3m ncdu \
     arm-none-eabi-gcc avr-gcc avrdude dfu-programmer dfu-util arm-none-eabi-newlib \
     && \
