@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora-toolbox:37
+FROM registry.fedoraproject.org/fedora-toolbox:38
 LABEL MAINTAINER="jlindgre@redhat.com"
 
 # the big phat layer
