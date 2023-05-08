@@ -12,6 +12,6 @@ RUN dnf update -y && \
     podman-docker borgbackup pinentry restic \
     fzf vim tmux the_silver_searcher gh jq htop httpie bat moreutils \
     lm_sensors xdg-utils w3m ncdu \
-    arm-none-eabi-gcc avr-gcc avrdude dfu-programmer dfu-util arm-none-eabi-newlib \
+    arm-none-eabi-gcc avr-gcc avrdude dfu-programmer dfu-util arm-none-eabi-newlib openssl-devel \
     && \
     dnf clean all
